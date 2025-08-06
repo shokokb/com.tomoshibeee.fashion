@@ -1,21 +1,31 @@
 #Design
 
 ```python
-def is_fruit(piece):
-    match piece:
-        case 💗:  # Love
-        case 🤩:  # Joy
-        case 🕊️:  # Peace
-        case 🙏:  # Patience
-        case 😊:  # Kindness
-        case 🎁:  # Goodness
-        case 🤝:  # Faithfulness
-        case 🧘:  # Gentleness
-        case ⛓️:  # Self-control
-            return True
-        case _:
-            return False
+class Human:
+
+    fruits = {"💗", "🤩", "🕊️", "🙏", "😊", "🎁", "🤝", "🧘", "⛓️"}
+
+    def __init__(self):
+        self._piece = input("What is your piece?")
+    
+    def is_fruit(self):
+        return self._piece in Human.fruits
+
+def main():
+    me = Human()
+    print(me.is_fruit())
+
+if __name__ == "__main__":
+    main()
+
 # Galatians 5:22-23
+```
+
+
+# Other Approach
+
+```python
+print("💗🤩🕊️🙏😊🎁🤝🧘⛓️".count(input("What is your piece?")) > 0)
 ```
 
 ## Font-Awsome
@@ -31,3 +41,4 @@ def is_fruit(piece):
 | 🤝  | 誠実       | fa-handshake                             | fa-handshake                     |
 | 🧘  | 柔和       | fa-spa / fa-pray / fa-person-running(代用) | fa-spa（リラックスや癒し）                 |
 | ⛓️  | 自制       | fa-link / fa-chain                       | fa-link                          |
+
