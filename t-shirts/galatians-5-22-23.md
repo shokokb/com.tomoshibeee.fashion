@@ -1,4 +1,4 @@
-#Design
+# Design
 
 ```python
 class Human:
@@ -22,7 +22,7 @@ if __name__ == "__main__":
 ```
 
 
-# Other Approach
+## Other Approach
 
 ```python
 print("💗🤩🕊️🙏😊🎁🤝🧘⛓️".count(input("What is your piece?")) > 0)
